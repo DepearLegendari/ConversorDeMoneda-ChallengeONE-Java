@@ -7,7 +7,7 @@ public class DatosApi {
     private String base_code;
 
     // JSON:"conversion_rates"
-    private Map<String, Double> conversion_rates;
+    private Map<String, Double> conversion_rates; //Diccionario
 
     // GSON - accesibilidad para mapear los datos
     public String getBase_code() {

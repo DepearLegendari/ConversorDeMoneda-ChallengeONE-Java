@@ -1,9 +1,12 @@
 package com.conversor;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("===Conversor de Monedas");
+
+        ApiConsulta api = new ApiConsulta();
+        Conversor conversor = new Conversor(api);
+        MenuConversor menu = new MenuConversor(conversor);
+
+        menu.iniciar();
         }
     }
