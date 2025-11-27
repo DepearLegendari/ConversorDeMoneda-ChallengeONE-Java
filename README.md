@@ -18,6 +18,18 @@ El sistema permite:
 
 ✔ Estructurar el código con orientación a objetos.
 
+---------- NUEVOS PROCESOS AGREGADOS 25 NOV 2025 ------------
+
+✔ Conversión en tiempo real
+
+✔ Historial de conversiones
+
+✔ Lista de monedas ampliada
+
+✔ Flujo continuo de conversiones
+
+✔ Código comentado paso a paso para principiantes
+
 ============================================================================================
 
 📌 Tecnologías utilizadas
@@ -27,7 +39,7 @@ Java 17+
 
 Gson (Google)
 
-HttpClient
+HttpClient (Java)
 
 ExchangeRate API
 
@@ -42,17 +54,21 @@ POO (Programación Orientada a Objetos)
 
 El proyecto está dividido en clases limpias:
 
-Clase           Función.
-
-ApiConsulta	    Se conecta a la API y obtiene el JSON.
-
-DatosApi	    Representa el modelo de respuesta JSON.
-
-Conversor	    Realiza toda la lógica de conversión.
-
-MenuConversor	Interfaz con el usuario (menú dinámico).
-
-Principal	    Punto de entrada del programa.
+        (Clase)           (Función.)
+        
+        ApiConsulta	    Se conecta a la API y obtiene el JSON.
+        
+        DatosApi	    Representa el modelo de respuesta JSON.
+        
+        Conversor	    Realiza toda la lógica de conversión.
+        
+        MenuConversor	Interfaz con el usuario (menú dinámico).
+        
+        Historial       Registro de Historial
+        
+        Historial       Guardado del Historial en raíz del proyecto (historial_conversiones.txt)
+        
+        Principal	    Punto de entrada del programa.
 
 ============================================================================================
 
@@ -70,6 +86,12 @@ Principal	    Punto de entrada del programa.
 5️⃣ Se calcula la conversión usando las tasas recibidas.
 
 6️⃣ Se muestra el resultado final formateado.
+
+7️⃣ Registro de historial
+
+8️⃣ Guardar historial en archivo .txt
+
+9️⃣ Preguntar si desea otra conversión
 
 ============================================================================================
 
@@ -90,24 +112,69 @@ COP – Peso colombiano
 
 EUR – Euro
 
+JPY - Yen japonés
+
+GBP - Libra esterlina
+
+CAD - Dólar canadiense
+
+AUD - Dólar australiano
+
+NZD - Dólar neozelandés
+
+CHF - Franco suizo
+
+CNY - Yuan chino
+
+KRW - Won surcoreano
+
+SEK - Corona sueca
+
+NOK - Corona noruega
+
+DKK - Corona danesa
+
+BRL - Real brasileño
+
+PEN - Sol peruano
+
+UYU - Peso uruguayo
+
 Con soporte para más monedas mediante la API 🌍.
 
 ============================================================================================
 
-✨ EXTRA PLUS — Implementaciones premium
+✨ Historial de Conversiones
+
+El programa almacena todas las conversaciones realizadas durante la sesión en la clase
+Historial, indicando:
+    
+    * Fecha
+    
+    * Hora
+     
+    * Moneda origen
+     
+    * moneda destino
+     
+    * Monto ingresado 
+    
+    * Resultado
 
 
-Funcionalidad Extra	Estado
+============================================================================================
 
-🕒 Historial de conversiones	✔ Planificado.
-
-📅 Registro con fecha y hora	✔ Planificado.
-
-📁 Guardar historial en archivo	✔ Planificado.
-
-🌍 Lista interactiva de monedas (para usuarios que no conocen abreviaturas)	✔ En progreso.
-
-🏷️ Formato profesional de resultados	✔ Implementado.
+⭐ Próximas mejoras (Extras del proyecto)
+    
+    * Colores ANSI en la consola
+    
+    * Ejecutable .jar
+    
+    * Búsqueda por nombre de moneda
+     
+    * Diagramas UML
+     
+    * Interfaz gráfica (Swing / JavaFX)
 
 ============================================================================================
 
